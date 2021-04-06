@@ -46,6 +46,8 @@ console.log(twoTowers === returnOfTheKing); // false
 // Get the prototypes for both `Book` instances.
 const fellowshipOfTheRingPrototype = Object.getPrototypeOf(fellowshipOfTheRing);
 const twoTowersPrototype = Object.getPrototypeOf(twoTowers);
+console.log('***', fellowshipOfTheRingPrototype)
+console.log(Book.prototype)
 
 // Compare the `fellowshipOfTheRing` and `twoTowers` prototypes
 // to the `Book` constructor function's `prototype` property.
@@ -55,3 +57,5 @@ console.log(twoTowersPrototype === Book.prototype); // true
 // Compare the `fellowshipOfTheRing` and `twoTowers` prototypes
 // to each other.
 console.log(fellowshipOfTheRingPrototype === twoTowersPrototype); // true
+
+
